@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51fb5221-73ab-47f2-a127-0f235d89e542" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iYv3hJT2zpwtO8tsNy51Lrgf8J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/portal-1/images/home" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elli-A-nora\PhpstormProjects\TheCohorts\portal-1\images\home" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elli-A-nora\PhpstormProjects\TheCohorts\portal-1\images\home" />
+      <recent name="C:\Users\Elli-A-nora\PhpstormProjects\TheCohorts\portal-1\images" />
+      <recent name="C:\Users\Elli-A-nora\PhpstormProjects\TheCohorts" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="remote host" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/TheCohorts/portal-1/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51fb5221-73ab-47f2-a127-0f235d89e542" name="Default Changelist" comment="" />
+      <created>1602097142767</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602097142767</updated>
+      <workItem from="1602097143792" duration="11918000" />
+      <workItem from="1602168603803" duration="506000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="281" y="158" key="#SSH_Configurations" timestamp="1602168335169">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="281" y="158" key="#SSH_Configurations/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1602168335169" />
+    <state x="241" y="266" width="998" height="708" key="SettingsEditor" timestamp="1602169108424">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="241" y="266" width="998" height="708" key="SettingsEditor/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1602169108424" />
+    <state x="547" y="293" key="Vcs.Push.Dialog.v2" timestamp="1602168344761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="547" y="293" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1602168344761" />
+    <state x="383" y="376" key="ftp.server.browser" timestamp="1602167173429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="383" y="376" key="ftp.server.browser/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1602167173429" />
+    <state x="605" y="217" key="run.anything.popup" timestamp="1602166837989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="605" y="217" key="run.anything.popup/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1602166837989" />
+    <state x="469" y="322" width="672" height="678" key="search.everywhere.popup" timestamp="1602106692234">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="469" y="322" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1602106692234" />
+  </component>
+</project>

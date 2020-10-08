@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="http://the-cohorts.com" id="ea99deb1-3dfd-4657-b713-fd5c2bf84948" port="18765" nameFormat="DESCRIPTIVE" username="thecohor" />
+    </configs>
+  </component>
+</project>
