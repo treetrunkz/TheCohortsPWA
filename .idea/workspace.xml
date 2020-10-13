@@ -32,7 +32,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/portal-1/images/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -72,6 +72,7 @@
       <updated>1602097142767</updated>
       <workItem from="1602097143792" duration="11918000" />
       <workItem from="1602168603803" duration="506000" />
+      <workItem from="1602577984189" duration="468000" />
     </task>
     <servers />
   </component>
