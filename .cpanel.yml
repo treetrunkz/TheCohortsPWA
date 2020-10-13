@@ -1,7 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/thecohor/public.html
+    - export DEPLOYPATH=/home/thecohor/public_html
+    - /bin/cp -r * $DEPLOYPATH
     #- /bin/cp index.html $DEPLOYPATH
     #- /bin/cp style.css $DEPLOYPATH
-    - /bin/cp -r * $DEPLOYPATH
+
