@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/thecohor/public_html/
-    - /bin/cp -R repositories/TheCohortsPWA $DEPLOYPATH
+    - /bin/cp -R /home/thecohor/repositories/TheCohortsPWA $DEPLOYPATH
