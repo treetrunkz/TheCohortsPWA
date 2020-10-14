@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Template by Quackit.com -->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,9 +7,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <script src="../js/home.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/home.css">
-    <title>The Cohorts (P.W.A)</title>
+    <title>Contact Us</title>
 
     <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
@@ -46,10 +46,85 @@
     </nav>
 
     <div class="container-fluid">
-        <p>In-progress</p>
+        <!-- Left Column -->
+        <div class="col-sm-4">
 
+            <!-- List-Group Panel -->
+            <div class="card">
+                <div class="card-header p-b-0">
+                    <h5 class="card-title">Social Media</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action">Instagram</a>
+                    <a href="#" class="list-group-item list-group-item-action">Youtube</a>
+                    <a href="#" class="list-group-item list-group-item-action">Twitter</a>
+                    <a href="#" class="list-group-item list-group-item-action">Facebook</a>
+                </div>
+            </div>
 
-    </div><!--/container-fluid-->
+            <!-- Text Panel -->
+            <div class="card">
+                <div class="card-header p-b-0">
+                    <h5 class="card-title">Picture</h5>
+                </div>
+                <div class="card-block">
+                    <p>Picture of something " not cat :) "</p>
+                </div>
+            </div>
+        </div><!--/Left Column-->
+
+        <!--  Center column-->
+        <div class="col-sm-4">
+            <div class="row">
+                <article class="col-xs-12">
+                    <h2>Form they can reach to us</h2>
+
+                    <form id="registration" method="get">
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input type="name" name="exampleInputName1" class="form-control" id="exampleInputName1"
+                                   aria-describedby="nameHelp" placeholder="Enter your name">
+                            <!--<span class="d-none error" id="err-name">&#9888; Field is required</span>-->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                   placeholder="you@example.com">
+                            <!--
+                            <span class="d-none error" id="err-email">&#9888; Field is required</span>
+                            <span class="d-none error" id="err-emailFormat">&#9888; Invalid email format</span>
+                            -->
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-sm-4">
+            <!-- Form -->
+            <div class="card">
+                <div class="card-header p-b-0">
+                    <h5 class="card-title">Google Map iframe</h5>
+                </div>
+                <div class="card-block">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.5390305333444!2d-122.21858724872685!3d47.38191477906818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905eaea6606e61%3A0x206815f453c0e48b!2s24447%2094th%20Ave%20S%2C%20Kent%2C%20WA%2098030!5e0!3m2!1sen!2sus!4v1602658843527!5m2!1sen!2sus" width="100%" height="80%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header p-b-0">
+                    <h5 class="card-title">Picture</h5>
+                </div>
+                <div class="card-block">
+                    <img src="../images/home/3church.jpg" width="100%" height="auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
 
     <div class="footer-blurb">
         <div class="container">
@@ -74,7 +149,6 @@
 
                 </div>
             </div>
-            <!-- /.row -->
         </div>
     </div>
 
@@ -136,5 +210,4 @@
         <script src="../js/holder.min.js"></script>
     </div>
 </body>
-
 </html>
