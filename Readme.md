@@ -4,32 +4,18 @@ You can visit out webpage by clicking [HERE](https://the-cohorts.greenriverdev.c
 
 ## Git Helpful commands:
 
-1. Always run
-
-```
-git pull upstream master
-```
+1. Always run ``` git pull upstream master ```
 
 To sync your local repo with the central repo
 
 2. Make the changes on your code editor, Test it and make sure you verify it locally.
 
-3. 
+3. ``` git add . ```
 
-```
-git add .
-```
+4. ``` git commit -m "your commit message" ```
 
-4.
+5. ``` git push origin master ```
 
-```
-Git commit -m "your commit message"
-```
-
-5. 
-```
-Git push origin master
-```
 This will push your changes to your forked repo's master branch.
 
 6. You can submit a pull request from your Github browser > your repo.
