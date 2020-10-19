@@ -110,3 +110,12 @@ div.nav-square.col-sm-3 {
 .form-container .btn:hover, .open-button:hover {
     opacity: 1;
 }
+#icon {
+    z-index: 10;
+    position: absolute;
+    height: 50%;
+    pointer-events: all;
+}
+#link {
+    position: absolute;
+}
