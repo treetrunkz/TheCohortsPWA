@@ -1,6 +1,7 @@
 
 a.nav-link {
-	padding: 7.5px;
+	style: none;
+	padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-blurb {
     padding: 30px 0;
-    margin-top: 20px;
     background-color: #eee;
     color: black;
 }
