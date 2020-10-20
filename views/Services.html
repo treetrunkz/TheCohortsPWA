@@ -9,11 +9,12 @@
     <script src="../js/services.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/home.css">
     <link rel="stylesheet" type="text/css" href="../css/services.css">
-    <title>Contact Us</title>
+    <title>Services</title>
 
-    <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4
+    is officially released. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+          integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
     <link href="../css/custom.css" rel="stylesheet">
@@ -30,225 +31,309 @@
 </head>
 
 <body>
-<!-- Navigation -->
+    <header>
+        <!-- Navigation -->
+        <div class="navbar" id="navbarText">
+            <!-- Cross Image that navigates to Home page -->
+            <img id="icon" alt="cross" src="../images/cross.png" onClick="location.href='../index.html'"/>
 
-<div class="navbar" id="navbarText">
-    <img id="icon" href="#" src="../images/cross.png"/>
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="About.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-            </svg> About Us</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="Services.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-building" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
-                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
-            </svg> Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="ContactUs.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-            </svg> Contact Us</a>
-        </li>
-    </ul>
-    <span class="navbar-text">
-      Here to help those in need.
-    </span>
-</div>
-<div class="nav-scroller bg-white shadow-sm">
-    <nav class="nav nav-underline"></nav>
-</div>
+            <ul class="navbar-nav mr-auto">
+                <!-- Home Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5
+                              1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8
+                            2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                    </svg> Home</a>
+                </li>
 
-<div class="container-fluid col-sm-12" style="padding-top: 2%">
-    <article class="card">
-        <h2 class="card-header p-b-6">Services We Provide</h2>
-        <p>To qualify for our services you must reside within the Kent school zip code boundary.</p>
-        <p>If you are currently without permanent shelter, please reach out to us right away for help.</p>
-    </article>
-</div>
+                <!-- About Us Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314
+                              4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542
+                              6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8
+                              15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1
+                              .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg> About Us</a>
+                </li>
 
-<div class="container-fluid col-sm-8">
-    <div class="fill">
-        <div class="row">
-            <div class="col-sm-12">
-                <article class="card col">
-                    <h5 class="card-header">Rent and Utility Funds</h5>
-                    <p>You can obtain this <strong>once every calendar year</strong>.</br>
-                        Your name must be the name on the bill submitted.</p>
-                    <p><strong>*The bill must be marked as urgent or be a shut-off notice.</strong></p>
-                </article>
-            </div>
+                <!-- Services Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="Services.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-building" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0
+                              0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1
+                              .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1
+                              .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                        <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2
+                            0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2
+                            0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                    </svg> Services</a>
+                </li>
 
-            <div class="col-sm-12">
-                <article class="card col">
-                    <h5 class="card-header p-b-0">Gas Vouchers</h5>
-                    <p>You can obtain this <strong>once every six months</strong>.<br>
-                    You must have a valid/current Driver's license (not an ID card).</p>
-                </article>
-            </div>
+                <!-- Contact Us Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0
+                        0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                        <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg> Contact Us</a>
+                </li>
+            </ul>
 
-            <div class="col-sm-12">
-                <article class="card col">
-                    <h5 class="card-header p-b-0">Thrift Store Vouchers</h5>
-                    <p>You can obtain this <strong>once every six months</strong>.<br>
-                    This can be used for clothing and small household items.</p>
-                    <p>Thrift Store Hours: *TBA*</p>
-                </article>
-            </div>
-
-            <div class="col-sm-12">
-                <article class="card col">
-                        <h5 class="card-header p-b-0">Emergency Food/Toiletries</h5>
-                        <p>You can obtain this <strong>once every month</strong>.</p>
-                    </article>
-            </div>
-
-            <div class="col-sm-12">
-                <article class="card col">
-                    <h5 class="card-header p-b-0">Obtaining a Driver's License or ID Card</h5>
-                    <p>If you're seeking an ID card, check with DSHS to see if you qualify for a voucher
-                        (we'll pay for the difference).</p>
-                    <p>An appointment will be scheduled to meet with you at the
-                        <a href="https://fortress.wa.gov/dol/dolprod/dsdoffices/OfficeInfo.aspx?cid=316&oid=26"
-                        style="color: black">Department of Licensing in Kent</a>.</p>
-                </article>
-            </div>
+            <span class="navbar-text">
+              Here to help those in need.
+            </span>
         </div>
-    </div>
-</div>
 
-<div>
-    <input type=button onclick="homeRedirect()" value="Click Here for Financial Assistance!">
-</div>
-
-<div class="col-sm-4">
-    <div id="side-carousel" class="carousel slide " data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#side-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#side-carousel" data-slide-to="1"></li>
-            <li data-target="#side-carousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <a href="#">
-                    <img class="img-responsive" src="images/church_logo.jpg" alt="">
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="#">
-                    <img class="img-responsive" src="images/church_outside.jpg" alt="">
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="#">
-                    <img class="img-responsive" src="images/church.jpg" alt="">
-                </a>
-            </div>
+        <!-- Header styling -->
+        <div class="nav-scroller bg-white shadow-sm">
+            <nav class="nav nav-underline"></nav>
         </div>
-        <a class="left carousel-control" href="#side-carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#side-carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+    </header>
 
-    <div class="container-fluid">
-        <article class="card col">
-            <h5 class="card-header p-b-0">Other Helpful Resources</h5>
-            <p><a href="https://www.211.org/" style="color: black">211</a></p>
-            <p><a href="http://www.Kentmethodist.com/assistance" style="color: black">Kent Methodist</a></p>
+    <!-- Services We Provide Section -->
+    <div class="container-fluid col-sm-12" style="padding-top: 2%">
+        <article class="card">
+            <h2 class="card-header p-b-6">Services We Provide</h2>
+            <p class="center-text">
+                To qualify for our services you must reside within the Kent school zip code boundary.
+            </p>
+            <p class="center-text">
+                <strong>If you are currently <u>homeless</u>, please reach out to us right away for help!</strong>
+            </p>
         </article>
     </div>
-</div>
 
-<footer>
-    <div class="footer-blurb">
-        <div class="container">
+    <!-- Services Listed -->
+    <div class="container-fluid col-sm-8">
+        <div class="fill">
             <div class="row">
-                <div class="col-sm-3 footer-blurb-item">
-                    <h3><i class="fa fa-text-height" aria-hidden="true"></i> 1</h3>
-                    <p>Description</p>
-                    <p><a class="btn btn-primary" href="#">Procrastinate</a></p>
+                <!-- Rent and Utility Funds Section -->
+                <div class="col-sm-12">
+                    <article class="card col">
+                        <h5 class="card-header">Rent and Utility Funds</h5>
+                        <p class="box-padding">You can obtain this <strong>once every calendar year</strong>.<br>
+                            Your name must be the name on the bill submitted.</p>
+                        <p class="box-padding">
+                            *The bill must be marked as <strong>urgent</strong> or be a
+                            <strong>shut-off</strong> notice.
+                        </p>
+                    </article>
                 </div>
 
-                <div class="col-sm-3 footer-blurb-item">
-                    <h3><i class="fa fa-wrench" aria-hidden="true"></i> 2</h3>
-                    <p>Description</p>
-                    <p><a class="btn btn-success" href="#">Unleash</a></p>
+                <!-- Gas Vouchers Section -->
+                <div class="col-sm-12">
+                    <article class="card col">
+                        <h5 class="card-header p-b-0">Gas Vouchers</h5>
+                        <p class="box-padding">You can obtain this <strong>once every six months</strong>.<br>
+                        You must have a valid/current Driver's license (not an ID card).</p>
+                    </article>
                 </div>
 
-                <div class="col-sm-3 footer-blurb-item">
-                    <h3><i class="fa fa-paperclip" aria-hidden="true"></i> 3</h3>
-                    <p>Description</p>
-                    <p><a class="btn btn-primary" href="#">Complete</a></p>
+                <!-- Thrift Store Vouchers Section -->
+                <div class="col-sm-12">
+                    <article class="card col">
+                        <h5 class="card-header p-b-0">Thrift Store Vouchers</h5>
+                        <p class="box-padding">You can obtain this <strong>once every six months</strong>.<br>
+                        This can be used for clothing and small household items.</p>
+                        <p class="box-padding"><strong>Thrift Store Hours:</strong><br>
+                            Sunday: &nbsp;<em>Closed</em><br>
+                            Monday: &nbsp;<em>Closed</em><br>
+                            Tuesday: &nbsp;<em>Closed</em><br>
+                            Wednesday: &nbsp;<em>10:00 am - 4:00 pm</em><br>
+                            Thursday: &nbsp;<em>Closed</em><br>
+                            Friday: &nbsp;<em>Closed</em><br>
+                            Saturday: &nbsp;<em>10:00 am - 4:00 pm</em></p>
+                    </article>
                 </div>
 
-                <div class="col-sm-3 footer-blurb-item">
+                <!-- Emergency Food/Toiletries Section -->
+                <div class="col-sm-12">
+                    <article class="card col">
+                        <h5 class="card-header p-b-0">Emergency Food/Toiletries</h5>
+                        <p class="box-padding">You can obtain this <strong>once every month</strong>.</p>
+                    </article>
+                </div>
+
+                <!-- Driver's License/ID Card Section -->
+                <div class="col-sm-12">
+                    <article class="card col">
+                        <h5 class="card-header p-b-0">Obtaining a Driver's License or ID Card</h5>
+                        <p class="box-padding">
+                            If you're seeking an ID card, check with DSHS to see if you qualify for a voucher
+                            (we'll pay for the difference).
+                        </p>
+                        <p class="box-padding">An appointment will be scheduled to meet with you at the
+                            <a class="no-padding"
+                               href="https://fortress.wa.gov/dol/dolprod/dsdoffices/OfficeInfo.aspx?cid=316&oid=26"
+                               style="color: black"><strong>Department of Licensing in Kent</strong></a>.
+                        </p>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div class="small-print">
-            <div class="container">
-                <p><a href="#" style="color: black">Terms &amp; Conditions</a> |
-                    <a href="#" style="color: black">Privacy Policy</a> |
-                    <a href="#" style="color: black">Contact</a></p>
-            </div>
-
-            <button class="open-button" onclick="openForm()">Administrator Portal</button>
-        </div>
-
-        <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-                <h1>Login</h1>
-
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit" class="btn">Login</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
         </div>
     </div>
-</footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <div class="col-sm-4">
+        <!-- Financial Assistance Button (takes you to Home page) -->
+        <div class="container-fluid">
+            <div class="col-sm-6 offset-sm-3 button-padding">
+                <input type="button" onclick="homeRedirect()" value="Click Here for Financial Assistance!">
+            </div>
+        </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
-        integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
-        crossorigin="anonymous"></script>
+        <div class="container-fluid">
+            <article class="card col">
+                <h5 class="card-header p-b-0">Other Helpful Resources</h5>
+                <p class="center-text"><a href="https://www.211.org/" style="color: black">2 &#183; 1 &#183; 1</a></p>
+                <p class="center-text"><a href="http://www.Kentmethodist.com/assistance" style="color: black">
+                    Kent Methodist
+                </a></p>
+            </article>
+        </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
-        integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
-        crossorigin="anonymous"></script>
+        <!-- Picture Carousel -->
+        <div class="carousel-padding">
+            <div id="side-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#side-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#side-carousel" data-slide-to="1"></li>
+                    <li data-target="#side-carousel" data-slide-to="2"></li>
+                </ol>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"
-        integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD"
-        crossorigin="anonymous"></script>
+                <div class="carousel-inner" role="listbox">
+                    <!-- Picture 1: Church Inside -->
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <img class="img-responsive" src="../images/home/church.jpg" alt="">
+                        </a>
+                    </div>
 
-<script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+                    <!-- Picture 2: Church Outside -->
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-responsive" src="../images/home/church_outside.jpg" alt="">
+                        </a>
+                    </div>
 
-    $(function () {
-        $('[data-toggle="popover"]').popover()
-    })
-</script>
+                    <!-- Picture 3: Church Logo -->
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-responsive" src="../images/home/st_james.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#side-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="right carousel-control" href="#side-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-blurb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 footer-blurb-item">
+                        <h3><i class="fa fa-text-height" aria-hidden="true"></i> 1</h3>
+                        <p>Description</p>
+                        <p><a class="btn btn-primary" href="#">Procrastinate</a></p>
+                    </div>
+
+                    <div class="col-sm-3 footer-blurb-item">
+                        <h3><i class="fa fa-wrench" aria-hidden="true"></i> 2</h3>
+                        <p>Description</p>
+                        <p><a class="btn btn-success" href="#">Unleash</a></p>
+                    </div>
+
+                    <div class="col-sm-3 footer-blurb-item">
+                        <h3><i class="fa fa-paperclip" aria-hidden="true"></i> 3</h3>
+                        <p>Description</p>
+                        <p><a class="btn btn-primary" href="#">Complete</a></p>
+                    </div>
+
+                    <div class="col-sm-3 footer-blurb-item">
+                    </div>
+                </div>
+            </div>
+            <div class="small-print">
+                <div class="container">
+                    <p><a href="#" style="color: black">Terms &amp; Conditions</a> |
+                        <a href="#" style="color: black">Privacy Policy</a> |
+                        <a href="#" style="color: black">Contact</a></p>
+                </div>
+
+                <button class="open-button" onclick="openForm()">Administrator Portal</button>
+            </div>
+
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" id="email" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+            integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
+            integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
+            crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"
+            integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD"
+            crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
 </body>
 </html>

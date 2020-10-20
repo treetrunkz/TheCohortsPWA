@@ -1,3 +1,24 @@
+h2, p.center-text {
+    text-align: center;
+}
+
+p.box-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a.no-padding {
+    padding: 0;
+}
+
+div.button-padding {
+    padding: 20px 0px;
+}
+
+div.carousel-padding {
+    padding-top: 100px;
+}
+
 footer {
     clear: both;
 }
