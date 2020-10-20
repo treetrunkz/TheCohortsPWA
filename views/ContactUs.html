@@ -11,9 +11,7 @@
     <title>Contact Us</title>
 
     <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
     <link href="../css/custom.css" rel="stylesheet">
@@ -21,19 +19,12 @@
     <!-- For icons -->
     <link href="../css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
-    <!--        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
-    <!--    <![endif]&ndash;&gt;-->
-
 </head>
 
 <body>
     <!-- Navigation -->
     <div class="navbar" id="navbarText">
-        <img id="icon" href="#" src="../images/cross.png"/>
+        <img id="icon" src="../images/cross.png" alt="Image of carousel church">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="About.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -104,16 +95,16 @@
             <div class="row">
                 <article class="col-xs-12">
                     <form id="registration" method="get">
-                        <h3>Drop us a line</h3>
+                       <h3>Drop us a line</h3>
                         <fieldset>
                             <div class="form-group">
                                 <label for="exampleInputName1">Name:</label>
-                                <input type="text" name="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                                <input type="text" name="name" class="form-control" id="exampleInputName1">
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address:</label>
-                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1">
                             </div>
 
                             <div class="form-group">
@@ -122,7 +113,7 @@
                             </div>
                         </fieldset>
 
-                        <button type="submit" name=submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </article>
             </div>
@@ -156,32 +147,22 @@
         </div>
     </div>
 
+    <!--
+    <div class="container">
+        <div class="row">
 
-    <div class="footer-blurb">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 footer-blurb-item">
-                    <h3><i class="fa fa-text-height" aria-hidden="true"></i> 1</h3>
-                    <p> Description.</p>
-                    <p><a class="btn btn-primary" href="#">Procrastinate</a></p>
-                </div>
-                <div class="col-sm-3 footer-blurb-item">
-                    <h3><i class="fa fa-wrench" aria-hidden="true"></i> 2</h3>
-                    <p>Description </p>
-                    <p><a class="btn btn-success" href="#">Unleash</a></p>
-                </div>
-                <div class="col-sm-3 footer-blurb-item">
-                    <h3><i class="fa fa-paperclip" aria-hidden="true"></i> 3</h3>
-                    <p> Description.</p>
-                    <p><a class="btn btn-primary" href="#">Complete</a></p>
-                </div>
+            <div class="col-sm-3 footer-blurb-item">
+
             </div>
+
         </div>
     </div>
+    -->
 
     <div class="small-print">
         <div class="container">
-            <p><a href="#" style="color: black">Terms &amp; Conditions</a> | <a href="#" style="color: black">Privacy Policy</a> | <a href="#" style="color: black">Contact</a></p>
+            <p id="bottom"><a href="#" style="color: black">Terms &amp; Conditions</a> | <a href="#" style="color: black">Privacy Policy</a> | <a href="#" style="color: black">Contact</a></p>
+            <small>24447 94th Ave. S Kent, WA 98030</small>
         </div>
         <!--
         <button class="open-button" onclick="openForm()">Administrator Portal</button>
