@@ -11,9 +11,7 @@
     <title>Contact Us</title>
 
     <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
     <link href="../css/custom.css" rel="stylesheet">
@@ -21,45 +19,81 @@
     <!-- For icons -->
     <link href="../css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
-    <!--        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
-    <!--    <![endif]&ndash;&gt;-->
-
 </head>
 
 <body>
-    <!-- Navigation -->
-    <div class="navbar" id="navbarText">
-        <img id="icon" href="#" src="../images/cross.png"/>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="About.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                </svg> About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Services.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-building" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
-                    <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
-                </svg> Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../index.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                    <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                </svg> Home</a>
-            </li>
-        </ul>
-        <span class="navbar-text">
-      Here to help those in need.
-    </span>
-    </div>
-    <div class="nav-scroller bg-white shadow-sm">
-        <nav class="nav nav-underline"></nav>
-    </div>
+    <header>
+        <!-- Navigation -->
+        <div class="navbar" id="navbarText">
+            <!-- Cross Image that navigates to Home page -->
+            <img id="icon" alt="cross" src="../images/cross.png" onClick="location.href='../index.html'"/>
+
+            <ul class="navbar-nav mr-auto">
+                <!-- Home Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5
+                                  1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8
+                                2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg> Home</a>
+                </li>
+
+                <!-- About Us Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314
+                                  4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542
+                                  6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8
+                                  15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1
+                                  .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg> About Us</a>
+                </li>
+
+                <!-- Services Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="Services.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-building" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0
+                                  0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1
+                                  .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1
+                                  .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                            <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2
+                                0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2
+                                0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                        </svg> Services</a>
+                </li>
+
+                <!-- Contact Us Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0
+                            0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                            <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg> Contact Us</a>
+                </li>
+            </ul>
+
+            <span class="navbar-text">
+                  Here to help those in need.
+                </span>
+        </div>
+
+        <!-- Header styling -->
+        <div class="nav-scroller bg-white shadow-sm">
+            <nav class="nav nav-underline"></nav>
+        </div>
+    </header>
 
 
     <div class="container-fluid">
@@ -104,16 +138,16 @@
             <div class="row">
                 <article class="col-xs-12">
                     <form id="registration" method="get">
-                        <h3>Drop us a line</h3>
+                       <h3>Drop us a line</h3>
                         <fieldset>
                             <div class="form-group">
                                 <label for="exampleInputName1">Name:</label>
-                                <input type="text" name="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                                <input type="text" name="name" class="form-control" id="exampleInputName1">
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address:</label>
-                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1">
                             </div>
 
                             <div class="form-group">
@@ -122,7 +156,7 @@
                             </div>
                         </fieldset>
 
-                        <button type="submit" name=submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </article>
             </div>
@@ -156,32 +190,22 @@
         </div>
     </div>
 
+    <!--
+    <div class="container">
+        <div class="row">
 
-    <div class="footer-blurb">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 footer-blurb-item">
-                    <h3><i class="fa fa-text-height" aria-hidden="true"></i> 1</h3>
-                    <p> Description.</p>
-                    <p><a class="btn btn-primary" href="#">Procrastinate</a></p>
-                </div>
-                <div class="col-sm-3 footer-blurb-item">
-                    <h3><i class="fa fa-wrench" aria-hidden="true"></i> 2</h3>
-                    <p>Description </p>
-                    <p><a class="btn btn-success" href="#">Unleash</a></p>
-                </div>
-                <div class="col-sm-3 footer-blurb-item">
-                    <h3><i class="fa fa-paperclip" aria-hidden="true"></i> 3</h3>
-                    <p> Description.</p>
-                    <p><a class="btn btn-primary" href="#">Complete</a></p>
-                </div>
+            <div class="col-sm-3 footer-blurb-item">
+
             </div>
+
         </div>
     </div>
+    -->
 
     <div class="small-print">
         <div class="container">
-            <p><a href="#" style="color: black">Terms &amp; Conditions</a> | <a href="#" style="color: black">Privacy Policy</a> | <a href="#" style="color: black">Contact</a></p>
+            <p id="bottom"><a href="#" style="color: black">Terms &amp; Conditions</a> | <a href="#" style="color: black">Privacy Policy</a> | <a href="#" style="color: black">Contact</a></p>
+            <small>24447 94th Ave. S Kent, WA 98030</small>
         </div>
         <!--
         <button class="open-button" onclick="openForm()">Administrator Portal</button>
