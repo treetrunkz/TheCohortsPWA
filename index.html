@@ -70,17 +70,44 @@
 
 					</ul>
 				</form>
-				<!--					<a href="#" class="mx-auto btn btn-success">Request a free Consultation</a>-->
 				<div class="col-sm-12">
-					<p style="float: right;">Appointments are made first come first served. Online form is only accessibl
-						e during business hours. If you cannot access
+					<p style="float: right;">Appointments are made first come first served. Online form is only
+						accessible during business hours. If you cannot access
 						form it is either outside of business hours or we have filled our appointments for the week. Please try again next Monday
 						beginning at 1pm<br><br><i>Sign up here or call 253-852-4100</i></p>
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
 						Sign up
 					</button>
-
-					<button type="submit" class="btn btn-primary">Sign up</button><input onChange="zipcode()" type="text" id="zip" style="float: right;" type="text" placeholder="Zip Code" /><span id="response"></span></div>
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel" style="text-align: center;">Request Assistance</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="recipient-name" class="col-form-label">Recipient:</label>
+											<input type="text" class="form-control" id="recipient-name">
+										</div>
+										<div class="form-group">
+											<label for="message-text" class="col-form-label">Message:</label>
+											<textarea class="form-control" id="message-text"></textarea>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Sign Up</button>
+								</div>
+							</div>
+						</div>
+					</div>
+<!--					<button type="submit" class="btn btn-primary">Sign up</button><input onChange="zipcode()" type="text" id="zip" style="float: right;" type="text" placeholder="Zip Code" /><span id="response"></span>-->
+				</div>
 			</div>
 
 		</div>
@@ -115,18 +142,10 @@
 					<input type="text" class="form-control" id="uid" name="uid" placeholder="Username">
 				</div>
 				<button type="submit" class="btn btn-primary">Sign up</button>
-				<!--SEND AARON AN EMAIL WHEN NEW USER SUBMITS-->
-
-
-
 			</div>
 		</div>
 
 	</div><!--/Left Column-->
-
-
-
-
 
 	<!-- Right Column -->
 	<div id="generalbox" class="col-sm-3">
@@ -155,20 +174,7 @@
 				hope to those
 				in need</i></p></div>
 			</div>
-			<!--				<div class="card-block">-->
-			<!--                    <div class="text-xs-center" id="progress-caption-1">Rent Assistance &hellip; 100%</div>-->
-			<!--                    <progress class="progress progress-success" value="100" max="100" aria-describedby="progress-caption-1"></progress>-->
-			<!--                    <div class="text-xs-center" id="progress-caption-2">General/Other Assistance &hellip; 80%</div>-->
-			<!--                    <progress class="progress progress-info" value="80" max="100" aria-describedby="progress-caption-2"></progress>-->
-			<!--                    <div class="text-xs-center" id="progress-caption-3">Food Assistance &hellip; 45%</div>-->
-			<!--                    <progress class="progress progress-warning" value="45" max="100" aria-describedby="progress-caption-3"></progress>-->
-			<!--                    <div class="text-xs-center" id="progress-caption-4"> Individuals In Need Helped &hellip; 35%</div>-->
-			<!--                    <progress class="progress progress-danger" value="35" max="100" aria-describedby="progress-caption-4"></progress>-->
-			<!--				</div>-->
 		</div>
-
-		<!-- Carousel -->
-		<!-- 			<h4><i class="fa fa-language" aria-hidden="true"></i></h4>-->
 
 		<div id="side-carousel" class="carousel slide" data-ride="carousel" style="position: relative">
 			<ol class="carousel-indicators">
@@ -245,9 +251,9 @@
 			</a>
 		</div>
 
-	</div><!--/Right Column -->
+	</div>
 
-</div><!--/container-fluid-->
+</div>
 </div>
 <div class="footer-blurb">
 	<div class="container">
@@ -260,7 +266,6 @@
 
 
 		</div>
-		<!-- /.row -->
 	</div>
 
 </div>
