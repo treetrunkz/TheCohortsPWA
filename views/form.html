@@ -70,23 +70,38 @@
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Currently Without Residence</label>
                             </div>
+
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input name="fname" id="fname" class="form-control name"
+                                       placeholder="Your first name" data-placement="top"
+                                       data-trigger="manual" data-content="Must be your legal first name"
+                                       type="text" required></div>
+                            <div class="form-group">
+
+                                <label>Last Name</label>
+                                <input name="lname" id="lname" class="form-control name"
+                                       placeholder="Your last name" data-placement="top"
+                                       data-trigger="manual" data-content="Must be your legal last name"
+                                       type="text"></div>
+
                             <div class="form-group">
                                 <label>E-Mail</label>
-                                <input class="form-control email"
+                                <input name="email" id="email" class="form-control email"
                                        placeholder="email@you.com (so that we can contact you)"
                                        data-placement="top" data-trigger="manual"
                                        data-content="Must be a valid e-mail address (user@gmail.com)"
                                        type="text">
                             </div>
-                            <div class="form-group"><label>Phone</label>
-                                <input class="form-control phone"
+                            <div name="pnum" class="form-group"><label>Phone</label>
+                                <input id="pnum" class="form-control phone"
                                 placeholder="999-999-9999" data-placement="top"
                                 data-trigger="manual"
                                 data-content="Must be a valid phone number (999-999-9999)"
                                 type="text"></div>
 
                             <div class="form-group">
-                                <label for="inputZip">Enter your zip code: </label>
+                                <label name="zip" id="zip" for="inputZip">Enter your zip code: </label>
                                 <label>Eligible zipcodes: <strong>"98030" "98031" "98032" "98042" "98058" </strong></label>
                                 <input class="form-control" type="text" id="inputZip" placeholder="zip code">
                                 <aside id="emptyZipError" class="formErrors">&#9888; Please enter your zipCode.</aside>
@@ -97,7 +112,7 @@
                                 <legend>How can we help you? </legend>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="bills" id="bills">
+                                    <input  name="bills" class="form-check-input" type="checkbox" value="bills" id="bills">
                                     <label class="form-check-label" for="bills">
                                        I need help with utilities bill
                                     </label>
@@ -105,7 +120,7 @@
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="food" id="food">
+                                    <input name="food" class="form-check-input" type="checkbox" value="food" id="food">
                                     <label class="form-check-label" for="food">
                                         I need help with emergency food and toiletries
                                     </label>
@@ -113,7 +128,7 @@
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="gas" id="gas">
+                                    <input name="gas" class="form-check-input" type="checkbox" value="gas" id="gas">
                                     <label class="form-check-label" for="gas">
                                         I need assistance with gas voucher
                                     </label>
@@ -121,7 +136,7 @@
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="other" id="other">
+                                    <input name="other" class="form-check-input" type="checkbox" value="other" id="other">
                                     <label class="form-check-label" for="other">
                                         I need help with Others (not listed above)
                                     </label>
