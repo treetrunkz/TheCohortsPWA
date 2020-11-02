@@ -21,7 +21,8 @@ function validateZip()
         emptyZipError.style.visibility = "visible";
         valid = false;
     }
-    else if(zipInputValue!= "98030" && zipInputValue != "98031" && zipInputValue != "98032" && zipInputValue != "98042" && zipInputValue != "98058")
+
+    if(zipInputValue!= "98030" && zipInputValue != "98031" && zipInputValue != "98032" && zipInputValue != "98042" && zipInputValue != "98058")
     {
         outsideZipError.style.visibility = "visible";
         valid = false;
