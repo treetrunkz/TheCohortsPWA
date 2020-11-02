@@ -8,26 +8,50 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <script src="js/home.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/home.css">
-    <title>About Us</title>
+    <title>Group Form</title>
 
     <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
     <link href="css/custom.css" rel="stylesheet">
-
+    <link href="css/form.css" rel="stylesheet">
     <!-- For icons -->
     <link href="css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
 </head>
+<body>
+    <?php
+    date_default_timezone_set('PST');
+    $currentHour = date("H");
+    $openTime = 7;
+
+    $closeTime = 21;
+    if ($currentHour >= $openTime && $currentHour < $closeTime && (date("w") != 0 || date("w") != 6)){
+    $css = 'timeOn';
+    } else {
+    $css = 'timeOff';
+    }
+
+    echo '<style type="text/css">';
+    echo '.timeOn {
+    display:block;
+    }';
+    // This is our class for hiding the block
+       echo '.timeOff {
+    display:none;
+    }';
+    echo '</style>';
+    ?>
 <div style="width: 50%">
-        <div>
-                                <div class="header">
-                                    <h3 id="myModalLabel" style="text-align: center;">Register for assistance</h3>
+        <div id="container" class="container <?php echo $css; ?>">
+                                <div class="top">
+                                    <h3 id="myLabel" style="text-align: center;">Register for assistance</h3>
                                 </div>
                                 <div class="body">
                                     <h4 style="text-align: center;">Assistance information, necessary documentations</h4>
+                                    <h6 style="color: grey;"><sub>*Only available during office hours</sub></h6>
                                     <div class="body">
                                         <form class="form-horizontal col-sm-12">
                                             <div class="form-check" style="padding-left: 2%">
@@ -40,9 +64,9 @@
                                             <div class="form-group"<Label>Services</Label></div>
                                     <input type="checkbox" name="b1" ><label for="help1"> I need help with bills</label><br>
                                     <input type="checkbox" name="b2"><label for="help2"> I need help with food</label><br>
-                                    <input type="checkbox" name="b3" checked><label for="help3"> I need assistance with rent</label>
-                                    <input type="checkbox" name="b4"  checked><label for="help4"> I need help getting a ID card</label>
-                                    <input type="checkbox" name="other" checked><label for="other">Other</label>
+                                    <input type="checkbox" name="b3"><label for="help3"> I need assistance with rent</label><br>
+                                    <input type="checkbox" name="b4"><label for="help4"> I need help getting a ID card</label><br>
+                                    <input type="checkbox" name="other"><label for="other">Other</label>
                                     <br>
                                     <div class="form-group"><label>Tell us the type of assistance you need</label>
                                         <br>
@@ -62,3 +86,4 @@
     </div>
 </div>
 </div>
+</body>
