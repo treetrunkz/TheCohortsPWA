@@ -6,3 +6,29 @@
     background-color: #eee;
 }
 
+#fieldset {
+    padding: 2%;
+}
+
+button.btn.btn-primary {
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.card-block {
+   margin-left: 5%;
+}
+
+.formErrors {
+    visibility: hidden;
+    color: red;
+    font-weight: bold;
+}
+
+
+
