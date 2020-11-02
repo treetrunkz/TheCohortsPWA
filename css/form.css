@@ -4,3 +4,10 @@
 .closeTime {
     visibility: hidden;
 }
+
+.formErrors {
+    visibility: hidden;
+    color: red;
+    font-weight: bold;
+}
+

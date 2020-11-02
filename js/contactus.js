@@ -1,10 +1,8 @@
-let zipCodeButton = document.getElementById("submitButton");
+let zipCodeButton = document.getElementById("inputZipButton");
 zipCodeButton.addEventListener("click", validateZip);
 
 function validateZip()
 {
-    validateCheckbox();
-
     let valid = true;
 
     let emptyZipError = document.getElementById("emptyZipError");
@@ -31,19 +29,6 @@ function validateZip()
 
     return valid;
 
-}
-
-function validateCheckbox()
-{
-    let checks = document.querySelectorAll("input[type='checkbox']");
-
-    for(let i = 0; i < checks.length; i++)
-    {
-        if (checks[i].checked)
-        {
-            console.log(checks[i].value);
-        }
-    }
 }
 
 
