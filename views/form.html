@@ -86,48 +86,46 @@
                                 type="text"></div>
 
                             <div class="form-group">
-                                <label for="inputZip">Enter your zip code to check if you are eligible to apply for our service.</label>
+                                <label for="inputZip">Enter your zip code: </label>
+                                <label>Eligible zipcodes: <strong>"98030" "98031" "98032" "98042" "98058" </strong></label>
                                 <input class="form-control" type="text" id="inputZip" placeholder="zip code">
                                 <aside id="emptyZipError" class="formErrors">&#9888; Please enter your zipCode.</aside>
                                 <aside id="outsideZipError" class="formErrors">&#9888; Your zip code is outside the service range.</aside>
                             </div>
 
                             <fieldset class="form-group">
-                                <legend>Services We Provide: </legend>
+                                <legend>How can we help you? </legend>
 
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="bills" id="bills">
                                     <label class="form-check-label" for="bills">
-                                       I need help with bills
+                                       I need help with utilities bill
                                     </label>
+                                    <span id="billsNote"></span>
                                 </div>
 
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="food" id="food">
                                     <label class="form-check-label" for="food">
-                                        I need help with food
+                                        I need help with emergency food and toiletries
                                     </label>
+                                    <span id="foodNote"></span>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="rent" id="rent">
-                                    <label class="form-check-label" for="rent">
-                                        I need assistance with rent
+                                    <input class="form-check-input" type="checkbox" value="gas" id="gas">
+                                    <label class="form-check-label" for="gas">
+                                        I need assistance with gas voucher
                                     </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="idCard" id="idCard">
-                                    <label class="form-check-label" for="idCard">
-                                        I need help getting a ID card
-                                    </label>
+                                    <span id="gasNote"></span>
                                 </div>
 
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="other" id="other">
                                     <label class="form-check-label" for="other">
-                                        I need help with bills
+                                        I need help with Others (not listed above)
                                     </label>
+                                    <input type="text" placeholder="Please Enter here">
                                 </div>
 
                             </fieldset>
