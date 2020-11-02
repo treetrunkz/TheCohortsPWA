@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,84 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <script src="js/home.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/home.css">
     <title>Group Form</title>
 
     <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+          integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/form.css" rel="stylesheet">
     <!-- For icons -->
-    <link href="css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
+    <link href="../css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <?php
-    date_default_timezone_set('PST');
-    $currentHour = date("H");
-    $openTime = 7;
 
-    $closeTime = 21;
-    if ($currentHour >= $openTime && $currentHour < $closeTime && (date("w") != 0 || date("w") != 6)){
-    $css = 'timeOn';
-    } else {
-    $css = 'timeOff';
-    }
+    <!--<?php-->
+    <!--    date_default_timezone_set('PST');-->
+    <!--    $currentHour = date("H");-->
+    <!--    $openTime = 7;-->
 
-    echo '<style type="text/css">';
-    echo '.timeOn {
-    display:block;
-    }';
-    // This is our class for hiding the block
-       echo '.timeOff {
-    display:none;
-    }';
-    echo '</style>';
-    ?>
-<div style="width: 50%">
-        <div id="container" class="container <?php echo $css; ?>">
-                                <div class="top">
-                                    <h3 id="myLabel" style="text-align: center;">Register for assistance</h3>
-                                </div>
-                                <div class="body">
-                                    <h4 style="text-align: center;">Assistance information, necessary documentations</h4>
-                                    <h6 style="color: grey;"><sub>*Only available during office hours</sub></h6>
-                                    <div class="body">
-                                        <form class="form-horizontal col-sm-12">
-                                            <div class="form-check" style="padding-left: 2%">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                <label class="form-check-label" for="exampleCheck1">Currently Without Residence</label>
-                                            </div>
-                                            <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
-                                            <div class="form-group"><label>Phone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"></div>
-                                            <div class="form-group"><label>Zip Code</label><input class="form-control required" placeholder="Your current zipcode" data-placement="top" data-trigger="manual" data-content="Must be within the kent area (insert those zips here)." type="text"></div>
-                                            <div class="form-group"<Label>Services</Label></div>
-                                    <input type="checkbox" name="b1" ><label for="help1"> I need help with bills</label><br>
-                                    <input type="checkbox" name="b2"><label for="help2"> I need help with food</label><br>
-                                    <input type="checkbox" name="b3"><label for="help3"> I need assistance with rent</label><br>
-                                    <input type="checkbox" name="b4"><label for="help4"> I need help getting a ID card</label><br>
-                                    <input type="checkbox" name="other"><label for="other">Other</label>
-                                    <br>
-                                    <div class="form-group"><label>Tell us the type of assistance you need</label>
-                                        <br>
-                                        <div style="padding-left: 2%">
-                                        <textarea class="form-check-input" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
-                                    <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                                </div>
+    <!--    $closeTime = 21;-->
+    <!--    if ($currentHour >= $openTime && $currentHour < $closeTime && (date("w") != 0 || date("w") != 6)){-->
+    <!--$css = 'timeOn';-->
+    <!--} else {-->
+    <!--$css = 'timeOff';-->
+    <!--}-->
+
+    <!--echo '-->
+    <!--<style type="text/css">';-->
+    <!--echo-->
+
+    <!--'.timeOn {-->
+    <!--display:block-->
+
+    <!--;-->
+    <!--}-->
+    <!--';-->
+    <!--//This is our class for hiding the block echo-->
+
+    <!--'.timeOff {-->
+    <!--display:none-->
+
+    <!--;-->
+    <!--}-->
+    <!--';-->
+    <!--echo-->
+
+    <!--'</style>-->
+    <!--';-->
+    <!--?>-->
+
+        <div style="width: 50%">
+            <div id="container" class="container <?php echo $css; ?>">
+                <div class="top">
+                    <h3 id="myLabel" style="text-align: center;">Register for assistance</h3>
+                </div>
+                <div class="body">
+                    <h4 style="text-align: center;">Assistance information, necessary documentations</h4>
+                    <h6 style="color: grey;"><sub>*Only available during office hours</sub></h6>
+                    <div class="body">
+                        <form class="form-horizontal col-sm-12">
+                            <div class="form-check" style="padding-left: 2%">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Currently Without Residence</label>
                             </div>
-            <div class="footer">
-            </div>
+                            <div class="form-group">
+                                <label>E-Mail</label>
+                                <input class="form-control email"
+                                       placeholder="email@you.com (so that we can contact you)"
+                                       data-placement="top" data-trigger="manual"
+                                       data-content="Must be a valid e-mail address (user@gmail.com)"
+                                       type="text">
+                            </div>
+                            <div class="form-group"><label>Phone</label>
+                                <input class="form-control phone"
+                                placeholder="999-999-9999" data-placement="top"
+                                data-trigger="manual"
+                                data-content="Must be a valid phone number (999-999-9999)"
+                                type="text"></div>
 
+                            <div class="form-group">
+                                <label for="inputZip">Enter your zip code to check if you are eligible to apply for our service.</label>
+                                <input class="form-control" type="text" id="inputZip" placeholder="zip code">
+                                <aside id="emptyZipError" class="formErrors">&#9888; Please enter your zipCode.</aside>
+                                <aside id="outsideZipError" class="formErrors">&#9888; Your zip code is outside the service range.</aside>
+                            </div>
+
+                            <fieldset class="form-group">
+                                <legend>Services We Provide: </legend>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="bills" id="bills">
+                                    <label class="form-check-label" for="bills">
+                                       I need help with bills
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="food" id="food">
+                                    <label class="form-check-label" for="food">
+                                        I need help with food
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="rent" id="rent">
+                                    <label class="form-check-label" for="rent">
+                                        I need assistance with rent
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="idCard" id="idCard">
+                                    <label class="form-check-label" for="idCard">
+                                        I need help getting a ID card
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="other" id="other">
+                                    <label class="form-check-label" for="other">
+                                        I need help with bills
+                                    </label>
+                                </div>
+
+                            </fieldset>
+                        </form>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success pull-right" id="submitButton">Send It!</button>
+                            <p class="help-block pull-left text-danger hide formErrors">&nbsp; The form is not valid. </p>
+                        </div>
+
+                    </div>
+
+                <div class="footer">
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
-</div>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+        integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+        crossorigin="anonymous"></script>
+
+<!-- Tether -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
+        integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
+        crossorigin="anonymous"></script>
+
+<!-- Bootstrap 4 JavaScript. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"
+        integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD"
+        crossorigin="anonymous"></script>
+<script src="../js/home.js"></script>
+<script src="../js/form.js"></script>
 </body>
+</html>
