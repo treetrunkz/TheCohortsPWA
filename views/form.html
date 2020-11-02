@@ -20,43 +20,7 @@
 </head>
 <body>
 
-    <!--<?php-->
-    <!--    date_default_timezone_set('PST');-->
-    <!--    $currentHour = date("H");-->
-    <!--    $openTime = 7;-->
-
-    <!--    $closeTime = 21;-->
-    <!--    if ($currentHour >= $openTime && $currentHour < $closeTime && (date("w") != 0 || date("w") != 6)){-->
-    <!--$css = 'timeOn';-->
-    <!--} else {-->
-    <!--$css = 'timeOff';-->
-    <!--}-->
-
-    <!--echo '-->
-    <!--<style type="text/css">';-->
-    <!--echo-->
-
-    <!--'.timeOn {-->
-    <!--display:block-->
-
-    <!--;-->
-    <!--}-->
-    <!--';-->
-    <!--//This is our class for hiding the block echo-->
-
-    <!--'.timeOff {-->
-    <!--display:none-->
-
-    <!--;-->
-    <!--}-->
-    <!--';-->
-    <!--echo-->
-
-    <!--'</style>-->
-    <!--';-->
-    <!--?>-->
-
-        <div style="width: 50%">
+        <div id="showMe" style="width: 50%">
             <div id="container" class="container <?php echo $css; ?>">
                 <div class="top">
                     <h3 id="myLabel" style="text-align: center;">Register for assistance</h3>
@@ -77,6 +41,7 @@
                                        placeholder="Your first name" data-placement="top"
                                        data-trigger="manual" data-content="Must be your legal first name"
                                        type="text" required></div>
+                            <aside id="emptyName" class="formErrors">&#9888; Please enter your name.</aside>
                             <div class="form-group">
 
                                 <label>Last Name</label>
@@ -173,7 +138,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"
         integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD"
         crossorigin="anonymous"></script>
-<script src="../js/home.js"></script>
-<script src="../js/form.js"></script>
+<!--<script src="../js/home.js"></script>-->
+<!--<script src="../js/form.js"></script>-->
 </body>
 </html>

@@ -1,3 +1,15 @@
+.openTime {
+    visibility: visible;
+}
+.closeTime {
+    visibility: hidden;
+}
+
+.formErrors {
+    visibility: hidden;
+    color: red;
+    font-weight: bold;
+}
 {box-sizing: border-box;}
 /* Button used to open the contact form - fixed at the bottom of the page */
 header {
