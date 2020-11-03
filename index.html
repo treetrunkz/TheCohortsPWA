@@ -86,7 +86,7 @@
 								<h4 style="text-align: center;">Assistance information, necessary documentations</h4>
 								<h6 style="color: grey;"><sub>*Only available during office hours</sub></h6>
 								<div class="body">
-									<form class="form-horizontal col-sm-12">
+									<form class="form-horizontal col-sm-12" action="confirmation.php">
 										<div class="form-check" style="padding-left: 2%">
 											<input type="checkbox" class="form-check-input" id="check1" onClick="hideZip()">
 											<label class="form-check-label" for="check1">Currently Without Residence</label>
@@ -173,15 +173,12 @@
 												</label>
 												<input type="text" placeholder="Please Enter here">
 											</div>
-
 										</fieldset>
-									</form>
-
 									<div class="form-group">
-										<button type="submit" class="btn btn-success pull-right" id="submitButton">Send It!</button>
+										<button type="submit" value="Send Form" class="btn btn-success pull-right" id="submitButton">Send It!</button>
 										<p class="help-block pull-left text-danger hide formErrors">&nbsp; The form is not valid. </p>
 									</div>
-
+									</form>
 								</div>
 						<script>
 
