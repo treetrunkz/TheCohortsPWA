@@ -18,7 +18,9 @@ header {
 #generalbox {
     padding-top: 2%;
 }
-
+#generalbox2 {
+    padding-top: 2%;
+}
 a:link, a:visited {
     color: white;
     padding: 14px 25px;
