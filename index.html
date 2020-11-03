@@ -102,7 +102,7 @@
 										<div class="form-group">
 
 											<label>Last Name</label>
-											<input id="lnameVal" name="lname" id="lname" class="form-control name"
+											<input id="lnameVal" id="lname" class="form-control name"
 												   placeholder="Your last name" data-placement="top"
 												   data-trigger="manual" data-content="Must be your legal last name"
 												   type="text"></div>
@@ -110,14 +110,14 @@
 
 										<div class="form-group">
 											<label>E-Mail</label>
-											<input id="emailVal" name="email" id="email" class="form-control email"
+											<input id="emailVal" id="email" class="form-control email"
 												   placeholder="email@you.com (so that we can contact you)"
 												   data-placement="top" data-trigger="manual"
 												   data-content="Must be a valid e-mail address (user@gmail.com)"
 												   type="text">
 											<aside id="emailError" class="formErrors">&#9888; Please enter an email</aside>
 										</div>
-										<div name="pnum" class="form-group"><label>Phone</label>
+										<div class="form-group"><label>Phone</label>
 											<input id="pnum"  class="form-control phone"
 												   placeholder="999-999-9999" data-placement="top"
 												   data-trigger="manual"
@@ -126,7 +126,7 @@
 										<aside id="phoneError" class="formErrors">&#9888; Please enter a valid phone number.</aside>
 
 										<div class="form-group" id="show">
-											<label name="zip" id="zip" for="inputZip">Enter your zip code: </label>
+											<label id="zip" for="inputZip">Enter your zip code: </label>
 											<label>Eligible zipcodes: <strong>"98030" "98031" "98032" "98042" "98058" </strong></label>
 											<input class="form-control" type="text" id="inputZip" placeholder="zip code">
 											<aside id="emptyZipError" class="formErrors">&#9888; Please enter your zipCode.</aside>
@@ -152,8 +152,7 @@
 												<label class="form-check-label" for="food">
 													I need help with emergency food and toiletries
 												</label>
-												<aside id="show3"><ul><li>Once per month.</li>
-												</aside>
+												<aside id="show3"><ul><li>Once per month.</li></ul></aside>
 											</div>
 
 											<div class="form-check">
@@ -163,7 +162,7 @@
 												</label>
 												<aside id="show4"><ul><li>Every six months.</li>
 													<li>Must have a valid/current Driver's license</li>
-
+												</ul>
 												</aside>
 											</div>
 
