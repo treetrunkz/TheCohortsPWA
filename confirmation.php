@@ -62,7 +62,7 @@ error_reporting(E_ALL);
     echo "<p>Zip: $zipCode</p>";
     echo "<p>Services required: $bills $food $rent $id $other</p>";
 
-    $to = "jclark@mail.greenriver.edu";
+    $to = "ecarl@mail.greenriver.edu";
     $subject = "Application Placed";
     $message = "Order from $fromName";
     $message = "Phone Number: $phoneNumber";
