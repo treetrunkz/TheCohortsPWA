@@ -86,7 +86,7 @@
 								<h4 style="text-align: center;">Assistance information, necessary documentations</h4>
 								<h6 style="color: grey;"><sub>*Only available during office hours</sub></h6>
 								<div class="body">
-									<form class="form-horizontal col-sm-12" action="confirmation.php">
+									<form class="form-horizontal col-sm-12" id="actionForm" action="confirmation.php">
 										<div class="form-check" style="padding-left: 2%">
 											<input type="checkbox" class="form-check-input" id="check1" onClick="hideZip()">
 											<label class="form-check-label" for="check1">Currently Without Residence</label>
@@ -181,6 +181,7 @@
 										<button type="submit" value="Send Form" class="btn btn-success pull-right" id="submitButton">Send It!</button>
 									</form>
 								</div>
+								<h3 style="display: none; text-align: center;" id="form-closed-alert">Form is closed, it will be reopened during office hours.</h3>
 						<script>
 
 							let zipCodeButton = document.getElementById("submitButton");
@@ -570,6 +571,7 @@
 	</script>
 
 	<!-- Placeholder Images -->
+ 	<script src="js/officehours.js"></script>
 	<script src="js/holder.min.js"></script>
 	<script src="js/home.js"></script>
 	<script src="js/form.js"></script>
